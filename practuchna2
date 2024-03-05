@@ -1,0 +1,184 @@
+def string_formatting1():
+        print("Twinkle, twinkle, little star,")
+        print("\t\t" + "How I wonder what you are!")
+        print("\t\t\t"+ "Up above the world so high,")
+        print("\t\t\t\t"+ "Like a diamond in the sky.")
+        print("Twinkle, twinkle, little star,")
+        print("\t" + "How I wonder what you are!")
+print(string_formatting1())
+print(" ")
+
+def findS2(r):
+    result=3,14*r**2
+    return result
+print(findS2(2))
+print(" ")
+def first_last_color3():
+    color_list = ["Red","Green","White" ,"Black"]
+    print(color_list[0],", "+color_list[3])
+print(first_last_color3())
+print(" ")
+
+def find_result4(n):
+    result=n+n**2+n**3
+    print(result)
+    return result
+print(find_result4(5))
+print(" ")
+def print_even_num5():
+    numbers = [386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345, 399, 162, 758, 219, 918, 237,
+               412, 566, 826, 248, 866, 950, 626, 949, 687, 217, 815, 67, 104, 58, 512, 24, 892, 894, 767,
+               553, 81, 379, 843, 831, 445, 742, 717, 958,743, 527]
+    for i in numbers:
+        if i % 2 == 0:
+            print(i)
+        if i==237:
+                break
+print(print_even_num5())
+
+def check_sequence6(sequence):
+    i=0
+    zero_count=0;
+    one_count=0;
+    while i < len(sequence) and sequence[i] == '0':
+        zero_count += 1
+        i += 1
+        while i < len(sequence) and sequence[i] == '1':
+            one_count += 1
+            i += 1
+    if zero_count == one_count:
+        return True
+    return False
+
+print(check_sequence6("0101011"))
+
+def print_even_with_diapason7(n,m):
+    if m != 0:
+        step = abs(m) * 2
+        if m < 0:
+            step *= -1
+        for i in range(-n, n + 1, step):
+            if i % 2 == 0:
+                print(i)
+print(print_even_with_diapason7(10,2))
+
+def createList9():
+    number=[1,2,6,7,4,9]
+    L=[3, 6, 7]
+    number.extend(L)
+    print(number)
+    number[1]=33333
+    print(number)
+    number.reverse()
+    print(number)
+    number.append(3)
+    print(number)
+    number.pop(0)
+    print(number)
+    number.sort()
+    print(number)
+    number.clear()
+    print(number)
+print(createList9())
+
+def bibliotec10(id,last_name,first_name,group,course,books, statistics):
+        print("Twinkle, twinkle, little star,")
+        print("\t\t" + "How I wonder what you are!")
+        print("\t\t\t"+ "Up above the world so high,")
+        print("\t\t\t\t"+ "Like a diamond in the sky.")
+        print("Twinkle, twinkle, little star,")
+        print("\t" + "How I wonder what you are!")
+print(string_formatting1())
+print(" ")
+
+def findS2(r):
+    result=3,14*r**2
+    return result
+print(findS2(2))
+print(" ")
+def first_last_color3():
+    color_list = ["Red","Green","White" ,"Black"]
+    print(color_list[0],", "+color_list[3])
+print(first_last_color3())
+print(" ")
+
+def find_result4(n):
+    result=n+n**2+n**3
+    print(result)
+    return result
+print(find_result4(5))
+print(" ")
+def print_even_num5():
+    numbers = [386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345, 399, 162, 758, 219, 918, 237,
+               412, 566, 826, 248, 866, 950, 626, 949, 687, 217, 815, 67, 104, 58, 512, 24, 892, 894, 767,
+               553, 81, 379, 843, 831, 445, 742, 717, 958,743, 527]
+    for i in numbers:
+        if i % 2 == 0:
+            print(i)
+        if i==237:
+            break
+print(print_even_num5())
+print(" ")
+def check_sequence6(sequence):
+    i=0
+    zero_count=0;
+    one_count=0;
+    while i < len(sequence) and sequence[i] == '0':
+        zero_count += 1
+        i += 1
+        while i < len(sequence) and sequence[i] == '1':
+            one_count += 1
+            i += 1
+    if zero_count == one_count:
+        return True
+    return False
+
+print(check_sequence6("0101011"))
+print(" ")
+def print_even_with_diapason7(n,m):
+    if m != 0:
+        step = abs(m) * 2
+        if m < 0:
+            step *= -1
+        for i in range(-n, n + 1, step):
+            if i % 2 == 0:
+                print(i)
+print(print_even_with_diapason7(10,2))
+print(" ")
+def createList9():
+    number=[1,2,6,7,4,9]
+    L=[3, 6, 7]
+    number.extend(L)
+    print(number)
+    number[1]=33333
+    print(number)
+    number.reverse()
+    print(number)
+    number.append(3)
+    print(number)
+    number.pop(0)
+    print(number)
+    number.sort()
+    print(number)
+    number.clear()
+    print(number)
+print(createList9())
+print(" ")
+def bibliotec10(id,last_name,first_name,group,course,books, statistics):
+    reader={ "ID":id,
+             "прізвищe":last_name,
+             "Ім’я":first_name,
+             "Група":group,
+             "Курс":course,
+             "Книги": books,
+             "Статистика книг": statistics
+             }
+    choice = input("Оберіть опцію: ")
+    while True:
+        if choice == "1":
+            print(reader)
+        elif choice == "0":
+            print("Програма завершена.")
+            break
+        else:
+            print("Невірний вибір. Спробуйте ще раз.")
