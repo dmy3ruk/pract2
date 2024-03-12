@@ -101,7 +101,6 @@ def first_last_color3():
     print(color_list[0],", "+color_list[3])
 print(first_last_color3())
 print(" ")
-
 def find_result4(n):
     result=n+n**2+n**3
     print(result)
@@ -173,6 +172,7 @@ def bibliotec10(id,last_name,first_name,group,course,books, statistics):
              "Книги": books,
              "Статистика книг": statistics
              }
+    debt=[]
     choice = input("Оберіть опцію: ")
     while True:
         if choice == "1":
@@ -180,5 +180,16 @@ def bibliotec10(id,last_name,first_name,group,course,books, statistics):
         elif choice == "0":
             print("Програма завершена.")
             break
+        elif choice == "2":
+            print("Введіть книгу яку б хотіли б взяти в борг: ")
+            book=input()
+            debt.append(book)
+        elif choice == "3":
+            print("Ваш борг: ")
+            print(debt)
+            print("Введіть індекс книги яку ви хочете повернути: ")
+            index=input()
+            statistics.append(debt[index])
+            debt.remove(index)
         else:
             print("Невірний вибір. Спробуйте ще раз.")
